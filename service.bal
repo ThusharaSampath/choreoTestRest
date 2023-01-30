@@ -6,6 +6,9 @@ type Album readonly & record {|
     string artist;
 |};
 
+configurable int port = 9090;
+configurable string name = "Sampa";
+
 table<Album> key(title) albums = table [
     {title: "Blue Train", artist: "John Coltrane"},
     {title: "Jeru", artist: "Gerry Mulligan"}
